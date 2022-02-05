@@ -19,7 +19,11 @@ export const TableItem = ({ item }: Props) => {
         </C.Category>
       </C.TableColumn>
       <C.TableColumn>{item.title}</C.TableColumn>
-      <C.TableColumn>R$ {item.value.toFixed(2)}</C.TableColumn>
+      <C.TableColumn>
+        <C.Value color={categories[item.category].expense ? "red" : "green"}>
+          R$ {item.value.toFixed(2)}
+        </C.Value>
+      </C.TableColumn>
     </C.TableLine>
   );
 };
