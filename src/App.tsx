@@ -24,13 +24,20 @@ const App = () => {
     console.log(filteredList);
   }, [list, currentMonth]);
 
+  const handleMonthChange = (newMonth: string) => {
+    setCurrentMonth(newMonth);
+  };
+
   return (
     <C.Container>
       <C.Header>
         <C.Title>Finanças Pessoais</C.Title>
       </C.Header>
       <C.Body>
-        <InfoArea currentMonth={currentMonth} />
+        <InfoArea
+          currentMonth={currentMonth}
+          onMonthChange={handleMonthChange}
+        />
 
         {/* Area de inserção */}
 
