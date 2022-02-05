@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  background: #111;
+  min-height: 100vh;
+`;
 
 export const Header = styled.div`
-  background: darkblue;
+  background: #000;
   height: 150px;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `;
 
 export const Title = styled.h1`
