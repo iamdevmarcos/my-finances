@@ -20,3 +20,13 @@ export const filterListByMonth = (list: Item[], date: string): Item[] => {
 
   return newList;
 };
+
+export const formatDate = (date: Date): string => {
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+
+  return `${addZeroToDate(day)}/${addZeroToDate(month)}/${addZeroToDate(year)}`;
+};
+
+const addZeroToDate = (n: Number): string => (n < 10 ? `0${n}` : `${n}`);
