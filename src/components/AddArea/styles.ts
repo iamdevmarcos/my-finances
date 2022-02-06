@@ -27,6 +27,8 @@ export const Input = styled.input`
   padding: 0 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  background: #000;
+  color: #fff;
 `;
 
 export const Select = styled.select`
@@ -35,6 +37,8 @@ export const Select = styled.select`
   padding: 0 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  background: #000;
+  color: #fff;
 `;
 
 export const Button = styled.button`
